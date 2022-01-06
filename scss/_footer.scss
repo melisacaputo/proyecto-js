@@ -1,0 +1,45 @@
+footer {
+    background-color: $gris;
+    color: $blanco;
+    margin-top: 60px;
+    padding: 20px;
+    bottom: 0px;
+    font-size: $font;
+
+    p {
+        text-align: center;
+    }
+
+    .footer-content {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .footer-info {
+            li {
+                list-style-type: none;
+
+                &:first-of-type {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .footer-redes {
+            display: flex;
+
+            li {
+                list-style-type: none;
+
+                &:first-of-type {
+                    margin-right: 20px;
+                }
+
+                i {
+                    cursor: pointer;
+                    font-size: $font + 15;
+                }
+            }
+        }
+    }
+}

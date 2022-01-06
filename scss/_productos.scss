@@ -1,0 +1,71 @@
+/* === PRODUCTOS === */
+#container-general {
+    display: flex;
+    flex-direction: column;
+
+    #ordenar-modal {
+        display: flex;
+        justify-content: space-around;
+
+        #seleccion {
+            width: 20%;
+            margin: 20px 0px 30px 80px;
+        }
+
+        .modal-carrito {
+            width: 15%;
+            align-self: center;
+
+            i {
+                font-size: $font;
+            }
+        }
+
+
+        .table {
+            text-align: center;
+        }
+
+        #gastoTotal {
+            font-size: $font - 2;
+        }
+
+        .modal-footer a {
+            text-decoration: none;
+            color: $blanco;
+        }
+    }
+
+    #section-productos {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+
+
+        .card-product {
+            width: 30%;
+            margin: 20px;
+            text-align: center;
+
+
+            .img-container {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 50%;
+                    margin: 10px;
+                }
+            }
+
+
+            .info-producto {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

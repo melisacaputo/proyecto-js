@@ -1,0 +1,409 @@
+/* ----------- SMARTPHONE ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  /*--- GENERAL ---*/
+  header {
+    font-size: $font + 6;
+
+    nav {
+      div {
+        align-items: flex-end;
+
+        a {
+          margin: 5px;
+        }
+
+        .logo {
+          font-size: $font * 2;
+        }
+      }
+    }
+  }
+
+  footer {
+    font-size: $font - 2;
+
+    p {
+      font-size: $font - 2;
+    }
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+
+      .footer-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .footer-redes {
+        li {
+          i {
+            font-size: $font + 4;
+          }
+        }
+      }
+    }
+  }
+
+  /*--- INDEX ---*/
+  .img-mobile {
+    width: 20em;
+  }
+
+  .div-cuadros {
+
+    .cuadro-uno,
+    .cuadro-dos,
+    .cuadro-tres {
+      border-left: none;
+      border-right: none;
+      border-top: solid 1px $gris;
+      border-bottom: solid 1px $gris;
+      margin: 15px;
+
+      h2,
+      p {
+        font-size: $font - 2;
+      }
+    }
+  }
+
+  /*--- PRODUCTOS ---*/
+  .menu-nav {
+    background-color: $transparencia;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-left: 0px;
+
+    ol {
+      margin-bottom: 0px;
+      justify-content: center;
+    }
+  }
+
+  .container-productos {
+    display: flex;
+    flex-direction: column;
+
+    .categorias {
+      margin: 0;
+      padding: 0;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 0;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+          padding: 10px;
+        }
+      }
+    }
+
+    .section-productos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+      padding-top: 0px;
+
+      .card-product {
+        width: 100%;
+
+        .img-container {
+          width: 22em;
+        }
+      }
+    }
+  }
+
+  /*--- CARRITO ---*/
+  .section-carrito {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+
+    .form-carrito {
+      padding-top: 60px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 80%;
+    }
+
+    .resumen-carrito {
+      margin-right: auto;
+      margin-left: auto;
+      width: 75%;
+
+      table {
+        text-align: center;
+      }
+    }
+  }
+
+  /*--- CONTACTO ---*/
+  .section-contacto {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    .div-contacto {
+      margin-top: 0px;
+      justify-content: center;
+
+      div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 30vh;
+      }
+    }
+
+    .form-contacto {
+      margin-top: 50px;
+
+      section {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+      }
+    }
+  }
+
+  /*--- INFO ---*/
+  .info {
+    h2 {
+      font-size: $font + 8;
+      padding: 18px;
+    }
+
+    .info-pregunta {
+      font-size: $font + 2;
+    }
+
+    p {
+      font-size: $font + 1;
+    }
+  }
+}
+
+/* ----------- TABLET ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  /*--- GENERAL ---*/
+  header {
+    nav {
+      div {
+        align-items: flex-end;
+
+        a {
+          margin: 5px;
+        }
+      }
+    }
+  }
+
+  p,
+  li {
+    font-size: $font + 5;
+  }
+
+  footer {
+    .footer-content {
+      justify-content: space-around;
+      margin-bottom: 25px;
+    }
+  }
+
+  /*----INDEX----*/
+  .section-cuadros {
+    max-width: 600px;
+
+    .div-cuadros {
+
+      .cuadro-uno,
+      .cuadro-tres {
+        margin: 10px;
+      }
+
+      .cuadro-dos {
+        margin: 10px;
+        border-left: none;
+        border-right: none;
+        border-top: solid 1px $gris;
+        border-bottom: solid 1px $gris;
+      }
+    }
+  }
+
+  /*--- PRODUCTOS ---*/
+  .menu-nav {
+    background-color: $transparencia;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-left: 0px;
+
+    ol {
+      margin-bottom: 0px;
+      justify-content: center;
+    }
+  }
+
+  .container-productos {
+    display: flex;
+    flex-direction: column;
+
+    .categorias {
+      text-align: center;
+
+      ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+          a {
+            font-size: $font + 5;
+            margin: 10px;
+          }
+        }
+      }
+    }
+
+    .section-productos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .card-product {
+        width: 85%;
+        justify-self: center;
+        text-align: center;
+
+        .img-container {
+          img {
+            width: 20em;
+          }
+        }
+
+        strong {
+          font-size: $font;
+        }
+      }
+    }
+  }
+
+  /*--- CARRITO ---*/
+  .section-carrito {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .form-carrito {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      form {
+        h2 {
+          font-size: $font + 8;
+        }
+
+        input,
+        select,
+        button {
+          font-size: $font + 3;
+        }
+      }
+    }
+
+    .resumen-carrito {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+
+      table {
+        text-align: center;
+
+        tr {
+          td {
+            font-size: $font + 4;
+          }
+        }
+      }
+    }
+  }
+
+  /*--- CONTACTO ---*/
+  .section-contacto {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    .div-contacto {
+      margin-top: 0px;
+      justify-content: center;
+
+      div {
+        margin-top: 40px;
+        height: 30vh;
+      }
+    }
+
+    .form-contacto {
+      margin-top: 80px;
+
+      section {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        form {
+          h2 {
+            font-size: $font + 10;
+          }
+
+          label,
+          div,
+          input {
+            font-size: $font + 4;
+          }
+        }
+      }
+    }
+  }
+
+  /*--- INFO ---*/
+
+  .info {
+    h2 {
+      font-size: $font + 12;
+    }
+
+    .info-pregunta {
+      font-size: $font + 7;
+    }
+
+    p {
+      font-size: $font + 6;
+    }
+  }
+}

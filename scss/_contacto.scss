@@ -1,0 +1,77 @@
+/* === CONTACTO === */
+.section-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .div-contacto {
+        margin-top: 60px;
+        display: grid;
+
+        div {
+            background-color: $transparencia;
+            padding: 40px;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+
+            p {
+                padding: 10px;
+
+                i {
+                    margin-right: 25px;
+                    cursor: pointer;
+                    font-size: $font + 5;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .form-contacto {
+        section {
+            background-color: $lavanda;
+            padding: 40px;
+            border-radius: 10px;
+            width: 90vh;
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    margin-bottom: 30px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                label,
+                div {
+                    margin: 10px 0px 10px 0px;
+                    font-size: $font;
+                }
+
+                form input,
+                form textarea {
+                    border: none;
+                    border-radius: 5px;
+                    border-bottom: 1px solid $negro;
+                    resize: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .botones {
+                    width: 100%;
+                    &:hover {
+                        color: $lavanda;
+                    }
+                }
+            }
+        }
+    }
+}

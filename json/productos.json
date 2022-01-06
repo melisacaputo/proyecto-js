@@ -1,0 +1,196 @@
+[{
+        "id": 1,
+        "tipo": "Remera",
+        "nombre": "Musculosa Good Times",
+        "precio": 1400,
+        "foto": "../media/products/muscu good times.jpg"
+    }, {
+        "id": 2,
+        "tipo": "Remera",
+        "nombre": "Remera Aeternum",
+        "precio": 1400,
+        "foto": "../media/products/reme aeternum.jpg"
+    }, {
+        "id": 3,
+        "tipo": "Remera",
+        "nombre": "Remera Batik",
+        "precio": 1400,
+        "foto": "../media/products/reme batik.jpg"
+    }, {
+        "id": 4,
+        "tipo": "Remera",
+        "nombre": "Remera Global",
+        "precio": 1400,
+        "foto": "../media/products/reme global.jpg"
+    }, {
+        "id": 5,
+        "tipo": "Remera",
+        "nombre": "Remera Good Times",
+        "precio": 1400,
+        "foto": "../media/products/reme good times.jpg"
+    }, {
+        "id": 6,
+        "tipo": "Remera",
+        "nombre": "Remera Self Love",
+        "precio": 1500,
+        "foto": "../media/products/reme self love.jpg"
+    }, {
+        "id": 7,
+        "tipo": "Remera",
+        "nombre": "Remera Circles By Mac Miller",
+        "precio": 2200,
+        "foto": "../media/products/remera circles by mac.jpg"
+    }, {
+        "id": 8,
+        "tipo": "Remera",
+        "nombre": "Remera DGT1",
+        "precio": 1800,
+        "foto": "../media/products/remera dgt1.jpg"
+    },
+    {
+        "id": 9,
+        "tipo": "Remera",
+        "nombre": "Remera Essential negra",
+        "precio": 1700,
+        "foto": "../media/products/remera essential negra.jpg"
+    },
+    {
+        "id": 10,
+        "tipo": "Buzo",
+        "nombre": "Buzo Scream",
+        "precio": 4750,
+        "foto": "../media/products/buzo scream.jpg"
+    }, {
+        "id": 11,
+        "tipo": "Buzo",
+        "nombre": "Buzo Negro Oversized",
+        "precio": 4300,
+        "foto": "../media/products/buzo negro oversized.jpg"
+    }, {
+        "id": 12,
+        "tipo": "Buzo",
+        "nombre": "Buzo Batik Oversized",
+        "precio": 3800,
+        "foto": "../media/products/buzo batik.jpg"
+    }, {
+        "id": 13,
+        "tipo": "Buzo",
+        "nombre": "Hoodie Heads",
+        "precio": 3800,
+        "foto": "../media/products/hoodie heads.jpg"
+    }, {
+        "id": 14,
+        "tipo": "Buzo",
+        "nombre": "Buzo Il Mondo",
+        "precio": 4000,
+        "foto": "../media/products/buzo il mondo.jpg"
+    }, {
+        "id": 15,
+        "tipo": "Buzo",
+        "nombre": "Hoodie Chinese",
+        "precio": 5200,
+        "foto": "../media/products/hoodie chinese.jpg"
+    }, {
+        "id": 16,
+        "tipo": "Buzo",
+        "nombre": "Hoodie Levitating",
+        "precio": 5200,
+        "foto": "../media/products/hoodie levitating.jpg"
+    }, {
+        "id": 17,
+        "tipo": "Pantalon",
+        "nombre": "Jogging NC",
+        "precio": 2900,
+        "foto": "../media/products/pant logo.jpg"
+    }, {
+        "id": 18,
+        "tipo": "Short",
+        "nombre": "Short Shining in the dark",
+        "precio": 1700,
+        "foto": "../media/products/short shining.jpg"
+    }, {
+        "id": 19,
+        "tipo": "Short",
+        "nombre": "Short Notte",
+        "precio": 1700,
+        "foto": "../media/products/short notte.jpg"
+    }, {
+        "id": 20,
+        "tipo": "Bermuda",
+        "nombre": "Bermuda Catena Blanca",
+        "precio": 3000,
+        "foto": "../media/products/bermuda catena blanca.jpg"
+    }, {
+        "id": 21,
+        "tipo": "Bermuda",
+        "nombre": "Bermuda Catena Negra",
+        "precio": 3000,
+        "foto": "../media/products/bermuda catena negra.jpg"
+    }, {
+        "id": 22,
+        "tipo": "Short",
+        "nombre": "Short Essential Blanco",
+        "precio": 2800,
+        "foto": "../media/products/short essential blanco.jpg"
+    }, {
+        "id": 23,
+        "tipo": "Biker",
+        "nombre": "Biker Movement Naranja",
+        "precio": 1900,
+        "foto": "../media/products/bikers movement naranja.jpg"
+    }, {
+        "id": 24,
+        "tipo": "Biker",
+        "nombre": "Biker Movement Negra",
+        "precio": 1900,
+        "foto": "../media/products/bikers movement negra.jpg"
+    },{
+        "id": 25,
+        "tipo": "Biker",
+        "nombre": "Biker black",
+        "precio": 1000,
+        "foto": "../media/products/biker black.jpg"
+    }, {
+        "id": 26,
+        "tipo": "Accesorio",
+        "nombre": "Lentes Atria",
+        "precio": 2700,
+        "foto": "../media/products/lentes atria.jpg"
+    }, {
+        "id": 27,
+        "tipo": "Accesorio",
+        "nombre": "Lentes Venatori",
+        "precio": 2700,
+        "foto": "../media/products/lentes venatori.jpg"
+    }, {
+        "id": 28,
+        "tipo": "Accesorio",
+        "nombre": "Lentes Acrux",
+        "precio": 3450,
+        "foto": "../media/products/lentes acrux.jpg"
+    }, {
+        "id": 29,
+        "tipo": "Accesorio",
+        "nombre": "Lentes Alpheratz",
+        "precio": 3450,
+        "foto": "../media/products/lentes alpheratz.jpg"
+    }, {
+        "id": 30,
+        "tipo": "Accesorio",
+        "nombre": "Lentes Altair",
+        "precio": 3450,
+        "foto": "../media/products/lentes altair.jpg"
+    }, {
+        "id": 31,
+        "tipo": "Accesorio",
+        "nombre": "Beanie Pink",
+        "precio": 800,
+        "foto": "../media/products/beanie pink.jpg"
+    }, {
+        "id": 32,
+        "tipo": "Accesorio",
+        "nombre": "Beanie Violet",
+        "precio": 800,
+        "foto": "../media/products/beanie violet.jpg"
+    }
+]

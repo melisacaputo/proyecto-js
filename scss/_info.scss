@@ -1,0 +1,63 @@
+/* === INFO === */
+.info {
+    h2 {
+        padding: 20px;
+        letter-spacing: 5px;
+        word-spacing: 15px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .accordion {
+        max-width: 90%;
+        display: block;
+        margin: 50px auto;
+
+        .accordion-card {
+            margin-bottom: 20px;
+            width: 100%;
+
+            .accordion-header h3 {
+                cursor: pointer;
+                color: $negro;
+                position: relative;
+                background-color: $lavanda;
+                margin: 0;
+                padding: 15px 20px;
+                font-size: $font + 5;
+            }
+
+            .accordion-header {
+                position: relative;
+
+                span {
+                    cursor: pointer;
+                    position: absolute;
+                    right: 20px;
+                    top: 12px;
+                    height: 25px;
+                    width: 25px;
+                    color: $gris;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 25px;
+                    font-size: $font - 5;
+                }
+            }
+        }
+
+        .accordion-body {
+            padding: 20px;
+            display: none;
+
+            p {
+                font-size: $font;
+                line-height: 24px;
+                color: $negro;
+                margin: 0px;
+            }
+
+        }
+    }
+}

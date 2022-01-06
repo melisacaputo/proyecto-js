@@ -1,0 +1,43 @@
+/* === INDEX === */
+.carrusel-index {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.div-cuadros {
+    display: flex;
+    justify-content: center;
+    background-color: $transparencia;
+
+    .cuadro-uno,
+    .cuadro-tres {
+        width: 48vh;
+        margin: 30px;
+        padding: 25px;
+        font-size: $font + 5;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: $font + 2;
+
+            i {
+                padding: 10px;
+            }
+        }
+
+        p {
+            margin-left: 10px;
+        }
+    }
+
+    .cuadro-dos {
+        @extend .cuadro-uno;
+        border-left: solid 1px $negro;
+        border-right: solid 1px $negro;
+    }
+}

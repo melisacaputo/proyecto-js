@@ -1,0 +1,52 @@
+/* === CARRITO === */
+.section-carrito {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    .form-carrito {
+        width: 60%;
+
+        form {
+            h2 {
+                font-size: $font + 4;
+            }
+
+            .botones {
+                width: 100%;
+                &:hover {
+                    color: $blanco;
+                }
+            }
+
+            .error {
+                color: rgb(209, 30, 30);
+                display: none;
+            }
+        }
+    }
+
+    .resumen-carrito {
+        width: 60%;
+        margin-bottom: 50px;
+
+        table {
+            background-color: $transparencia;
+            color: $negro;
+            text-align: center;
+            border-collapse: collapse;
+
+            tr {
+                td {
+                    font-size: $font;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
