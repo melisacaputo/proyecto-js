@@ -65,22 +65,26 @@
 
     <div class="form-contacto">
       <section>
-        <form action="">
+        <form action="" id="form-contacto">
           <h2>Contactanos</h2>
           <label for="nombre">NOMBRE</label>
-          <input type="text" name="nombre" />
+          <input type="text" name="nombre" id="nombre-contacto" class="entrada-contacto" />
+          <div class="error" id="error-nombre-contacto">Ingresa un nombre válido</div>
           <label for="email">EMAIL</label>
-          <input type="email" name="email" />
+          <input type="email" name="email" id="email-contacto" class="entrada-contacto" />
+          <div class="error" id="error-email-contacto">Ingresa un email válido</div>
           <label for="tel">TELÉFONO</label>
-          <input type="tel" name="tel" />
+          <input type="number" name="tel" id="telefono-contacto" class="entrada-contacto" />
+          <div class="error" id="error-telefono-contacto">Ingresa un telefono válido</div>
           <label for="mensaje">MENSAJE</label>
-          <textarea name="mensaje" cols="40" rows="5" maxlength="250"></textarea>
+          <textarea name="mensaje" cols="40" rows="5" maxlength="250" id="mensaje-contacto"
+            class="entrada-contacto"></textarea>
+          <div class="error" id="error-mensaje-contacto">Ingresa un mensaje</div>
           <div>
             <input type="checkbox" name="acepta" value="1" />
             Recibir newsletter
           </div>
-          <input type="submit" value="Enviar" class="botones btn" />
-          <input type="reset" value="Resetear" class="botones btn" />
+          <input type="submit" value="Enviar" class="botones btn" id="enviar-form" />
         </form>
       </section>
     </div>
@@ -105,6 +109,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Sweet Alert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--Mi script-->
+  <script src="../js/contacto.js"></script>
 </body>
 
 </html>

@@ -18,6 +18,7 @@ $(document).ready(function () {
   renderizarProductos();
   mostrarEnTabla();
 
+  //evento para que figure una alerta si el carrito esta vacio
   $("#btn-continuar").on('click', function (e) {
     if (carrito.length == 0){
       e.preventDefault();
@@ -115,7 +116,7 @@ function agregarAlCarrito(productoAgregado) {
                             </tr>`);
 
   } else {
-    //pido al carro la posicion del producto y despues incremento su cantidad
+    //pido al carrito la posicion del producto y despues incremento su cantidad
     let posicion = carrito.findIndex(p => p.id == productoAgregado.id);
     carrito[posicion].cantidad += 1;
     $(`#${productoAgregado.id}`).html(carrito[posicion].cantidad);
@@ -157,15 +158,6 @@ function calcularTotalCarrito() {
   $("#montoTotalCompra").text(total);
   $("#cantidad-compra").text(carrito.length);
   return total;
-}
-
-//funcion que resetea todos los valores una vez finalizada la compra 
-function vaciarCarrito() {
-  $("#gastoTotal").text("Total: $0");
-  $("#cantidad-compra").text("0");
-  $(".tabla-carrito").remove();
-  localStorage.clear();
-  carrito = [];
 }
 
 //funcion para traer el carrito cargado cada vez que se refresca la pagina

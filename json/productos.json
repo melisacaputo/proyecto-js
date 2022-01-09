@@ -3,8 +3,7 @@
         "tipo": "Remera",
         "nombre": "Musculosa Good Times",
         "precio": 1400,
-        "foto": "../media/products/muscu good times.jpg",
-        "stock": 20
+        "foto": "../media/products/muscu good times.jpg"
     }, {
         "id": 2,
         "tipo": "Remera",
@@ -145,7 +144,7 @@
         "nombre": "Biker Movement Negra",
         "precio": 1900,
         "foto": "../media/products/bikers movement negra.jpg"
-    },{
+    }, {
         "id": 25,
         "tipo": "Biker",
         "nombre": "Biker black",

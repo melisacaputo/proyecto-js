@@ -10,6 +10,8 @@ $(document).ready(function () {
             $(".accordion .accordion-header span").removeClass("fa-minus").addClass("fa-plus");
             $(this).next(".accordion-body").addClass("active").slideDown();
             $(this).children("span").removeClass("fa-plus").addClass("fa-minus");
-        }
-    })
-})
+        };
+    });
+});
+
+//no se por que cuando carga por primera vez hay que hacer dos clics para que funcione, despues anda bien
