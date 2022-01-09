@@ -171,6 +171,8 @@ footer {
     .section-carrito .form-carrito form .error {
       color: #d11e1e;
       display: none; }
+    .section-carrito .form-carrito form .pago-tarjeta {
+      display: none; }
   .section-carrito .resumen-carrito {
     width: 60%;
     margin-bottom: 50px; }

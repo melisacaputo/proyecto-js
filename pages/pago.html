@@ -25,7 +25,7 @@
         content="ropa urbana, moda urbana, comprar, carrito, carrito de compras, ecommerce, tienda online" />
     <meta name="description"
         content="Comprá productos de Notte Clothing. Hacé tu pedido, pagalo online de forma segura y recibilo donde quieras." />
-    <title>Carrito | Tienda Online de Notte Clothing</title>
+    <title> Cobro | Tienda Online de Notte Clothing</title>
 </head>
 
 <body>
@@ -60,28 +60,28 @@
                     <div id="error-nombre" class="error">Ingresa un nombre valido</div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-6">
-                    <input type="email" class="form-control" placeholder="Email" id = "email" />
+                    <input type="email" class="form-control" placeholder="Email" id="email" />
                     <div id="error-email" class="error">Ingresa un email valido</div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-6">
-                    <input type="tel" class="form-control" placeholder="Telefono" id="telefono">
+                    <input type="numbers" class="form-control" placeholder="Telefono" id="telefono">
                     <div id="error-tel" class="error">Ingresa un telefono valido</div>
                 </div>
                 <h2>Entrega</h2>
                 <div class="col-12">
-                    <input type="text" class="form-control" placeholder="Dirección" id="direccion"/>
+                    <input type="text" class="form-control" placeholder="Dirección" id="direccion" />
                     <div id="error-direccion" class="error">Ingresa una dirección valida</div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4">
-                    <input type="number" class="form-control" placeholder="Código postal" id="cod-postal"/>
+                    <input type="number" class="form-control" placeholder="Código postal" id="cod-postal" />
                     <div id="error-codigopostal" class="error">Ingresa un codigo postal valido</div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4">
-                    <input type="text" class="form-control" placeholder="Provincia" id="provincia"/>
+                    <input type="text" class="form-control" placeholder="Provincia" id="provincia" />
                     <div id="error-provincia" class="error">Ingresa una provincia valida</div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4">
-                    <input type="text" class="form-control" placeholder="Localidad" id="localidad"/>
+                    <input type="text" class="form-control" placeholder="Localidad" id="localidad" />
                     <div id="error-localidad" class="error">Ingresa una localidad valida</div>
                 </div>
                 <div>
@@ -95,12 +95,24 @@
                     <div id="error-envio" class="error">Ingresa un metodo de envio</div>
                 </div>
                 <h2>Pago</h2>
-                <select name="pago" class="form-select" id="metodo-pago">
-                    <option selected>Método de pago</option>
-                    <option value="debito" id="debito">Tarjeta de debito</option>
-                    <option value="credito" id="credito">Tarjeta de credito</option>
-                    <option value="efectivo" id="efectivo">Efectivo</option>
-                </select>
+                <div>
+                    <select name="pago" class="form-select" id="metodo-pago">
+                        <option value="defecto" selected>Método de pago</option>
+                        <option value="debito" id="debito">Tarjeta de debito</option>
+                        <option value="credito" id="credito">Tarjeta de credito</option>
+                        <option value="efectivo" id="efectivo">Efectivo</option>
+                    </select>
+                    <div id="error-pago" class="error">Ingresa un metodo de pago</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <input type="number" class="form-control pago-tarjeta" placeholder="Número tarjeta" id="num-tarjeta" />
+                    <div id="error-numtarj" class="error">Ingresa un numero valido</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <input type="number" class="form-control pago-tarjeta" placeholder="Codigo de seguridad" id="cod-seguridad" />
+                    <div id="error-codseg" class="error">Ingrese un codigo valido</div>
+                </div>
+
                 <div class="col-12">
                     <button type="submit" class="btn botones" id="btn-finalizar">Finalizar compra</button>
                 </div>

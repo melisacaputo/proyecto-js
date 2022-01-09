@@ -3,7 +3,8 @@
         "tipo": "Remera",
         "nombre": "Musculosa Good Times",
         "precio": 1400,
-        "foto": "../media/products/muscu good times.jpg"
+        "foto": "../media/products/muscu good times.jpg",
+        "stock": 20
     }, {
         "id": 2,
         "tipo": "Remera",

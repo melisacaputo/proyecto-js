@@ -17,6 +17,18 @@ $(document).ready(function () {
   obtenerJSON();
   renderizarProductos();
   mostrarEnTabla();
+
+  $("#btn-continuar").on('click', function (e) {
+    if (carrito.length == 0){
+      e.preventDefault();
+      Swal.fire({
+        icon: 'error',
+        title: 'No hay ningun item en tu carrito',
+        text: 'Agrega algun producto para continuar',
+        confirmButtonColor: "#444444"
+      })
+    }
+  });
 });
 
 //funcion para el renderizado de los productos en cards
@@ -87,11 +99,12 @@ function agregarAlCarrito(productoAgregado) {
   if (encontrado == undefined) {
     let productoEnCarrito = new ProductoCarrito(productoAgregado);
     carrito.push(productoEnCarrito);
-    Swal.fire(
-      'Nuevo producto agregado al carrito',
-      productoAgregado.nombre,
-      'success'
-    );
+    Swal.fire({
+      icon: 'success',
+      title: 'Nuevo producto agregado al carrito',
+      text: productoAgregado.nombre,
+      confirmButtonColor: "#444444"
+    });
 
     //agregamos una nueva fila a la tabla de carrito en caso de que el producto no se encontrara 
     $("#tablabody").append(`<tr id='fila${productoEnCarrito.id}' class='tabla-carrito'>
