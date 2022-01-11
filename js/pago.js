@@ -1,8 +1,9 @@
 $(document).ready(function () {
     //subtotal que viene del archivo carrito.js
     $("#subtotal").text(calcularTotalCarrito());
-    //evento para que figure el envio sin la necesidad de que haya un error primero
+    //evento para que se modifique el html al cambiar el select sin que haya un error primero
     $("#metodo-envio").on("change", calcularEnvio);
+    $("#metodo-pago").on("change", validarPago);
     //funcion para validar el form 
     validarFormulario();
 });
@@ -112,6 +113,8 @@ function validarFormulario() {
 
                 //reseteo los campos de entrada
                 $(".entrada-pago").val('');
+                $("#metodo-envio option[value='defecto']").attr("selected", true);
+                $("#metodo-pago option[value='defecto']").attr("selected", true);
             };
         } else {
             //este else es para cuando el usuario elige efectivo
@@ -146,6 +149,8 @@ function validarFormulario() {
 
             //reseteo los campos de entrada
             $(".entrada-pago").val('');
+            $("#metodo-envio option[value='defecto']").attr("selected", true);
+            $("#metodo-pago option[value='defecto']").attr("selected", true);
         };
     });
 };
@@ -193,14 +198,14 @@ function calcularTotalCompra(envio) {
 function validarPago() {
     let metodoPago = $("#metodo-pago").val();
     if (metodoPago == "debito" || metodoPago == "credito") {
-        $(".pago-tarjeta").show();
-        $("#error-pago").hide();
+        $(".pago-tarjeta").fadeIn();
+        $("#error-pago").fadeOut();
     };
     if (metodoPago == "efectivo") {
-        $(".pago-tarjeta").hide();
-        $("#error-pago").hide();
-        $("#error-numtarj").hide();
-        $("#error-codseg").hide();
+        $(".pago-tarjeta").fadeOut();
+        $("#error-pago").fadeOut();
+        $("#error-numtarj").fadeOut();
+        $("#error-codseg").fadeOut();
     };
 };
 
