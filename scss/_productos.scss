@@ -17,17 +17,16 @@
             align-self: center;
 
             i {
-                font-size: $font;
+                font-size: 1.2rem;
             }
         }
-
 
         .table {
             text-align: center;
         }
 
         #gastoTotal {
-            font-size: $font - 2;
+            font-size: 1.2rem;
         }
 
         .modal-footer a {
@@ -46,8 +45,7 @@
 
 
         .card-product {
-            width: 30%;
-            margin: 20px;
+            margin: 20px 0px;
             text-align: center;
 
 
@@ -55,7 +53,7 @@
                 position: relative;
 
                 img {
-                    width: 100%;
+                    width: 20em;
                     height: 50%;
                     margin: 10px;
                 }

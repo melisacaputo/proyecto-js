@@ -11,7 +11,7 @@ body {
   font-family: "Oswald", sans-serif; }
 
 .botones {
-  font-size: 18px;
+  font-size: 1rem;
   font-family: oswald, sans-serif;
   width: 50%;
   padding: 10px;
@@ -22,8 +22,7 @@ body {
   background-color: #444444; }
 
 p {
-  margin: 0px;
-  font-size: 20px; }
+  margin: 0px; }
 
 ol,
 ul {
@@ -34,21 +33,23 @@ header {
   margin-bottom: 50px;
   box-shadow: 0px 0px 15px 0px #000100;
   font-family: "Bebas Neue", cursive;
-  font-size: 28px;
+  font-size: 1.6rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1; }
-  header nav {
-    height: 100px; }
-    header nav div {
-      display: flex;
-      justify-content: flex-end; }
-      header nav div .logo {
-        font-size: 40px;
-        font-style: italic; }
-      header nav div a {
-        margin: 20px; }
+  header nav div {
+    display: flex;
+    justify-content: flex-end; }
+    header nav div .logo {
+      font-size: 2rem;
+      font-style: italic; }
+    header nav div a {
+      margin: 20px; }
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 2600px) {
+  nav {
+    height: 100px; } }
 
 footer {
   background-color: #444444;
@@ -56,7 +57,7 @@ footer {
   margin-top: 60px;
   padding: 20px;
   bottom: 0px;
-  font-size: 20px; }
+  font-size: 1.2rem; }
   footer p {
     text-align: center; }
   footer .footer-content {
@@ -75,40 +76,36 @@ footer {
           margin-right: 20px; }
         footer .footer-content .footer-redes li i {
           cursor: pointer;
-          font-size: 35px; }
+          font-size: 1.8rem; }
 
 /* === INDEX === */
 .carrusel-index {
   display: flex;
   justify-content: center;
   margin-bottom: 40px; }
+  .carrusel-index .carousel-item img {
+    width: 20em; }
 
 .div-cuadros {
   display: flex;
   justify-content: center;
-  background-color: rgba(158, 158, 158, 0.137); }
-  .div-cuadros .cuadro-uno, .div-cuadros .cuadro-dos,
-  .div-cuadros .cuadro-tres {
+  width: 90%;
+  margin: auto; }
+  .div-cuadros .boxes {
     width: 48vh;
-    margin: 30px;
+    margin: 10px;
     padding: 25px;
-    font-size: 25px; }
-    .div-cuadros .cuadro-uno:hover, .div-cuadros .cuadro-dos:hover,
-    .div-cuadros .cuadro-tres:hover {
+    background-color: rgba(158, 158, 158, 0.137); }
+    .div-cuadros .boxes:hover {
       transform: scale(1.1, 1.1); }
-    .div-cuadros .cuadro-uno h2, .div-cuadros .cuadro-dos h2,
-    .div-cuadros .cuadro-tres h2 {
+    .div-cuadros .boxes h2 {
       font-weight: bold;
-      font-size: 22px; }
-      .div-cuadros .cuadro-uno h2 i, .div-cuadros .cuadro-dos h2 i,
-      .div-cuadros .cuadro-tres h2 i {
+      font-size: 1.2rem; }
+      .div-cuadros .boxes h2 i {
         padding: 10px; }
-    .div-cuadros .cuadro-uno p, .div-cuadros .cuadro-dos p,
-    .div-cuadros .cuadro-tres p {
-      margin-left: 10px; }
-  .div-cuadros .cuadro-dos {
-    border-left: solid 1px #000100;
-    border-right: solid 1px #000100; }
+    .div-cuadros .boxes p {
+      margin-left: 10px;
+      font-size: 1rem; }
 
 /* === PRODUCTOS === */
 #container-general {
@@ -124,11 +121,11 @@ footer {
       width: 15%;
       align-self: center; }
       #container-general #ordenar-modal .modal-carrito i {
-        font-size: 20px; }
+        font-size: 1.2rem; }
     #container-general #ordenar-modal .table {
       text-align: center; }
     #container-general #ordenar-modal #gastoTotal {
-      font-size: 18px; }
+      font-size: 1.2rem; }
     #container-general #ordenar-modal .modal-footer a {
       text-decoration: none;
       color: #f5f5f5; }
@@ -140,13 +137,12 @@ footer {
     justify-content: space-around;
     align-items: flex-end; }
     #container-general #section-productos .card-product {
-      width: 30%;
-      margin: 20px;
+      margin: 20px 0px;
       text-align: center; }
       #container-general #section-productos .card-product .img-container {
         position: relative; }
         #container-general #section-productos .card-product .img-container img {
-          width: 100%;
+          width: 20em;
           height: 50%;
           margin: 10px; }
       #container-general #section-productos .card-product .info-producto {
@@ -166,7 +162,7 @@ footer {
   .section-carrito .form-carrito {
     width: 60%; }
     .section-carrito .form-carrito form h2 {
-      font-size: 24px; }
+      font-size: 1.2rem; }
     .section-carrito .form-carrito form .botones {
       width: 100%; }
       .section-carrito .form-carrito form .botones:hover {
@@ -185,7 +181,7 @@ footer {
       text-align: center;
       border-collapse: collapse; }
       .section-carrito .resumen-carrito table tr td {
-        font-size: 20px;
+        font-size: 1.2rem;
         padding: 15px; }
 
 /* === CONTACTO === */
@@ -209,7 +205,7 @@ footer {
         .section-contacto .div-contacto div p i {
           margin-right: 25px;
           cursor: pointer;
-          font-size: 25px;
+          font-size: 1.5rem;
           align-items: center; }
   .section-contacto .form-contacto section {
     background-color: #d7c1d7d5;
@@ -222,15 +218,16 @@ footer {
       .section-contacto .form-contacto section form .error {
         display: none;
         color: #d11e1e;
-        font-size: 18px; }
+        font-size: 1rem; }
       .section-contacto .form-contacto section form h2 {
         margin-bottom: 30px;
         font-weight: bold;
-        text-align: center; }
+        text-align: center;
+        font-size: 1.5rem; }
       .section-contacto .form-contacto section form label,
       .section-contacto .form-contacto section form div {
-        margin: 10px 0px 10px 0px;
-        font-size: 20px; }
+        margin: 5px 0px 5px 0px;
+        font-size: 1.1rem; }
       .section-contacto .form-contacto section form form input,
       .section-contacto .form-contacto section form form textarea {
         border: none;
@@ -268,7 +265,7 @@ footer {
       background-color: #d7c1d7d5;
       margin: 0;
       padding: 15px 20px;
-      font-size: 25px; }
+      font-size: 1.2rem; }
     .info .accordion .accordion-card .accordion-header {
       position: relative; }
       .info .accordion .accordion-card .accordion-header span {
@@ -282,12 +279,12 @@ footer {
         border-radius: 50%;
         text-align: center;
         line-height: 25px;
-        font-size: 15px; }
+        font-size: .8rem; }
   .info .accordion .accordion-body {
     padding: 20px;
     display: none; }
     .info .accordion .accordion-body p {
-      font-size: 20px;
+      font-size: 1.2rem;
       line-height: 24px;
       color: #000100;
       margin: 0px; }
@@ -295,20 +292,12 @@ footer {
 /* ----------- SMARTPHONE ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /*--- GENERAL ---*/
-  header {
-    font-size: 26px; }
-    header nav {
-      height: 100%; }
-      header nav div {
-        align-items: flex-end; }
-        header nav div a {
-          margin: 5px; }
-        header nav div .logo {
-          font-size: 40px; }
+  header nav div {
+    align-items: flex-end; }
+    header nav div a {
+      margin: 5px; }
   footer {
-    font-size: 18px; }
-    footer p {
-      font-size: 18px; }
+    font-size: 1rem; }
     footer .footer-content {
       flex-direction: column;
       align-items: center; }
@@ -317,25 +306,11 @@ footer {
         flex-direction: column;
         text-align: center;
         margin-bottom: 30px; }
-      footer .footer-content .footer-redes li i {
-        font-size: 24px; }
   /*--- INDEX ---*/
-  .img-mobile {
-    width: 20em; }
-  .div-cuadros .cuadro-uno, .div-cuadros .cuadro-dos,
-  .div-cuadros .cuadro-dos,
-  .div-cuadros .cuadro-tres {
-    border-left: none;
-    border-right: none;
-    border-top: solid 1px #444444;
-    border-bottom: solid 1px #444444;
-    margin: 15px; }
-    .div-cuadros .cuadro-uno h2, .div-cuadros .cuadro-dos h2, .div-cuadros .cuadro-uno p, .div-cuadros .cuadro-dos p,
-    .div-cuadros .cuadro-dos h2,
-    .div-cuadros .cuadro-dos p,
-    .div-cuadros .cuadro-tres h2,
-    .div-cuadros .cuadro-tres p {
-      font-size: 18px; }
+  .div-cuadros .boxes {
+    width: 55vh; }
+    .div-cuadros .boxes h2 {
+      font-size: 1rem; }
   /*--- PRODUCTOS ---*/
   #container-general #ordenar-modal {
     flex-direction: column;
@@ -354,9 +329,12 @@ footer {
       width: 90%;
       margin: auto; }
       #container-general #section-productos .card-product .img-container img {
-        margin: 20px 0px; }
+        margin: 20px 0px;
+        width: 15em; }
       #container-general #section-productos .card-product .info-producto .botones {
-        width: 60%; }
+        width: 60%;
+        font-size: .9rem;
+        padding: 2px; }
   /*--- CARRITO ---*/
   .section-carrito {
     display: flex;
@@ -365,7 +343,6 @@ footer {
     margin-left: auto;
     width: 100%; }
     .section-carrito .form-carrito {
-      padding-top: 60px;
       margin-right: auto;
       margin-left: auto;
       width: 80%; }
@@ -397,10 +374,16 @@ footer {
         padding: 20px; }
   /*--- INFO ---*/
   .info h2 {
-    font-size: 28px;
-    padding: 18px; }
-  .info .accordion .accordion-card .accordion-header h3 {
-    font-size: 15px; } }
+    padding: 20px; }
+  .info .accordion {
+    margin: 20px auto; }
+    .info .accordion .accordion-body p {
+      font-size: 1rem; }
+    .info .accordion .accordion-card .accordion-header span {
+      right: 5px; }
+    .info .accordion .accordion-card .accordion-header h3 {
+      font-size: 1rem;
+      padding: 15px 20px 15px 10px; } }
 
 /* ----------- TABLET ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -409,57 +392,23 @@ footer {
     align-items: flex-end; }
     header nav div a {
       margin: 5px; }
-  p,
-  li {
-    font-size: 25px; }
   footer .footer-content {
     justify-content: space-around;
     margin-bottom: 25px; }
   /*----INDEX----*/
-  .section-cuadros {
-    max-width: 600px; }
-    .section-cuadros .div-cuadros .cuadro-uno, .section-cuadros .div-cuadros .cuadro-dos,
-    .section-cuadros .div-cuadros .cuadro-tres {
-      margin: 10px; }
-    .section-cuadros .div-cuadros .cuadro-dos {
-      margin: 10px;
-      border-left: none;
-      border-right: none;
-      border-top: solid 1px #444444;
-      border-bottom: solid 1px #444444; }
+  .div-cuadros .boxes h2 {
+    font-size: 1rem; }
+  .div-cuadros .boxes p {
+    font-size: .9rem; }
   /*--- PRODUCTOS ---*/
-  .menu-nav {
-    background-color: rgba(158, 158, 158, 0.137);
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    padding-left: 0px; }
-    .menu-nav ol {
-      margin-bottom: 0px;
-      justify-content: center; }
-  .container-productos {
-    display: flex;
-    flex-direction: column; }
-    .container-productos .categorias {
-      text-align: center; }
-      .container-productos .categorias ul {
-        display: flex;
-        justify-content: center; }
-        .container-productos .categorias ul li a {
-          font-size: 25px;
-          margin: 10px; }
-    .container-productos .section-productos {
-      display: grid;
-      grid-template-columns: 1fr 1fr; }
-      .container-productos .section-productos .card-product {
-        width: 85%;
-        justify-self: center;
-        text-align: center; }
-        .container-productos .section-productos .card-product .img-container img {
-          width: 20em; }
-        .container-productos .section-productos .card-product strong {
-          font-size: 20px; }
+  #container-general #ordenar-modal #seleccion {
+    margin: 0px; }
+  #container-general #section-productos {
+    width: 100%; }
+  #container-general .botones {
+    width: 60%;
+    font-size: .9rem;
+    padding: 5px; }
   /*--- CARRITO ---*/
   .section-carrito {
     width: 80%;
@@ -471,21 +420,13 @@ footer {
       width: 100%;
       margin-left: auto;
       margin-right: auto; }
-      .section-carrito .form-carrito form h2 {
-        font-size: 28px; }
-      .section-carrito .form-carrito form input,
-      .section-carrito .form-carrito form select,
-      .section-carrito .form-carrito form button {
-        font-size: 23px; }
-    .section-carrito .resumen-carrito {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 50px; }
-      .section-carrito .resumen-carrito table {
-        text-align: center; }
-        .section-carrito .resumen-carrito table tr td {
-          font-size: 24px; }
+      .section-carrito .form-carrito .resumen-carrito {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px; }
+        .section-carrito .form-carrito .resumen-carrito table {
+          text-align: center; }
   /*--- CONTACTO ---*/
   .section-contacto {
     width: 80%;
@@ -494,27 +435,14 @@ footer {
     display: flex;
     flex-direction: column; }
     .section-contacto .div-contacto {
-      margin-top: 0px;
-      justify-content: center; }
+      width: 60%;
+      margin: auto; }
       .section-contacto .div-contacto div {
         margin-top: 40px;
-        height: 30vh; }
+        font-size: 1.1rem; }
     .section-contacto .form-contacto {
       margin-top: 80px; }
       .section-contacto .form-contacto section {
         width: 100%;
         margin-left: auto;
-        margin-right: auto; }
-        .section-contacto .form-contacto section form h2 {
-          font-size: 30px; }
-        .section-contacto .form-contacto section form label,
-        .section-contacto .form-contacto section form div,
-        .section-contacto .form-contacto section form input {
-          font-size: 24px; }
-  /*--- INFO ---*/
-  .info h2 {
-    font-size: 32px; }
-  .info .info-pregunta {
-    font-size: 27px; }
-  .info p {
-    font-size: 26px; } }
+        margin-right: auto; } }

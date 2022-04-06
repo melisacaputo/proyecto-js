@@ -3,10 +3,7 @@
 
   /*--- GENERAL ---*/
   header {
-    font-size: $font + 6;
-
     nav {
-      height: 100%;
 
       div {
         align-items: flex-end;
@@ -14,20 +11,12 @@
         a {
           margin: 5px;
         }
-
-        .logo {
-          font-size: $font * 2;
-        }
       }
     }
   }
 
   footer {
-    font-size: $font - 2;
-
-    p {
-      font-size: $font - 2;
-    }
+    font-size: 1rem;
 
     .footer-content {
       flex-direction: column;
@@ -39,36 +28,16 @@
         text-align: center;
         margin-bottom: 30px;
       }
-
-      .footer-redes {
-        li {
-          i {
-            font-size: $font + 4;
-          }
-        }
-      }
     }
   }
 
   /*--- INDEX ---*/
-  .img-mobile {
-    width: 20em;
-  }
-
   .div-cuadros {
+    .boxes {
+      width: 55vh;
 
-    .cuadro-uno,
-    .cuadro-dos,
-    .cuadro-tres {
-      border-left: none;
-      border-right: none;
-      border-top: solid 1px $gris;
-      border-bottom: solid 1px $gris;
-      margin: 15px;
-
-      h2,
-      p {
-        font-size: $font - 2;
+      h2 {
+        font-size: 1rem;
       }
     }
   }
@@ -102,18 +71,20 @@
         .img-container {
           img {
             margin: 20px 0px;
+            width: 15em;
           }
         }
 
         .info-producto {
           .botones {
             width: 60%;
+            font-size: .9rem;
+            padding: 2px;
           }
         }
       }
     }
   }
-
 
   /*--- CARRITO ---*/
   .section-carrito {
@@ -124,7 +95,6 @@
     width: 100%;
 
     .form-carrito {
-      padding-top: 60px;
       margin-right: auto;
       margin-left: auto;
       width: 80%;
@@ -174,15 +144,27 @@
   /*--- INFO ---*/
   .info {
     h2 {
-      font-size: $font + 8;
-      padding: 18px;
+      padding: 20px;
     }
 
     .accordion {
+      margin: 20px auto;
+
+      .accordion-body {
+        p {
+          font-size: 1rem;
+        }
+      }
+
       .accordion-card {
         .accordion-header {
+          span {
+            right: 5px;
+          }
+
           h3 {
-            font-size: 15px;
+            font-size: 1rem;
+            padding: 15px 20px 15px 10px;
           }
         }
       }
@@ -206,11 +188,6 @@
     }
   }
 
-  p,
-  li {
-    font-size: $font + 5;
-  }
-
   footer {
     .footer-content {
       justify-content: space-around;
@@ -219,82 +196,38 @@
   }
 
   /*----INDEX----*/
-  .section-cuadros {
-    max-width: 600px;
-
-    .div-cuadros {
-
-      .cuadro-uno,
-      .cuadro-tres {
-        margin: 10px;
+  .div-cuadros {
+    .boxes {
+      h2 {
+        font-size: 1rem;
       }
 
-      .cuadro-dos {
-        margin: 10px;
-        border-left: none;
-        border-right: none;
-        border-top: solid 1px $gris;
-        border-bottom: solid 1px $gris;
+      p {
+        font-size: .9rem;
       }
     }
   }
+
 
   /*--- PRODUCTOS ---*/
-  .menu-nav {
-    background-color: $transparencia;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    padding-left: 0px;
-
-    ol {
-      margin-bottom: 0px;
-      justify-content: center;
-    }
-  }
-
-  .container-productos {
-    display: flex;
-    flex-direction: column;
-
-    .categorias {
-      text-align: center;
-
-      ul {
-        display: flex;
-        justify-content: center;
-
-        li {
-          a {
-            font-size: $font + 5;
-            margin: 10px;
-          }
-        }
+  #container-general {
+    #ordenar-modal {
+      #seleccion {
+        margin: 0px;
       }
     }
 
-    .section-productos {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    #section-productos {
+      width: 100%;
+    }
 
-      .card-product {
-        width: 85%;
-        justify-self: center;
-        text-align: center;
-
-        .img-container {
-          img {
-            width: 20em;
-          }
-        }
-
-        strong {
-          font-size: $font;
-        }
-      }
+    .botones {
+      width: 60%;
+      font-size: .9rem;
+      padding: 5px;
     }
   }
+
 
   /*--- CARRITO ---*/
   .section-carrito {
@@ -309,32 +242,14 @@
       margin-left: auto;
       margin-right: auto;
 
-      form {
-        h2 {
-          font-size: $font + 8;
-        }
+      .resumen-carrito {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
 
-        input,
-        select,
-        button {
-          font-size: $font + 3;
-        }
-      }
-    }
-
-    .resumen-carrito {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 50px;
-
-      table {
-        text-align: center;
-
-        tr {
-          td {
-            font-size: $font + 4;
-          }
+        table {
+          text-align: center;
         }
       }
     }
@@ -349,12 +264,12 @@
     flex-direction: column;
 
     .div-contacto {
-      margin-top: 0px;
-      justify-content: center;
+      width: 60%;
+      margin: auto;
 
       div {
         margin-top: 40px;
-        height: 30vh;
+        font-size: 1.1rem;
       }
     }
 
@@ -365,35 +280,7 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-
-        form {
-          h2 {
-            font-size: $font + 10;
-          }
-
-          label,
-          div,
-          input {
-            font-size: $font + 4;
-          }
-        }
       }
-    }
-  }
-
-  /*--- INFO ---*/
-
-  .info {
-    h2 {
-      font-size: $font + 12;
-    }
-
-    .info-pregunta {
-      font-size: $font + 7;
-    }
-
-    p {
-      font-size: $font + 6;
     }
   }
 }

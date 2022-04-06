@@ -25,7 +25,7 @@
                 background-color: $lavanda;
                 margin: 0;
                 padding: 15px 20px;
-                font-size: $font + 5;
+                font-size:1.2rem;
             }
 
             .accordion-header {
@@ -42,7 +42,7 @@
                     border-radius: 50%;
                     text-align: center;
                     line-height: 25px;
-                    font-size: $font - 5;
+                    font-size: .8rem;
                 }
             }
         }
@@ -52,7 +52,7 @@
             display: none;
 
             p {
-                font-size: $font;
+                font-size: 1.2rem;
                 line-height: 24px;
                 color: $negro;
                 margin: 0px;

@@ -23,7 +23,7 @@
                 i {
                     margin-right: 25px;
                     cursor: pointer;
-                    font-size: $font + 5;
+                    font-size: 1.5rem;
                     align-items: center;
                 }
             }
@@ -44,19 +44,20 @@
                 .error {
                     display: none;
                     color: rgb(209, 30, 30);
-                    font-size: $font - 2;
+                    font-size: 1rem;
                 }
 
                 h2 {
                     margin-bottom: 30px;
                     font-weight: bold;
                     text-align: center;
+                    font-size: 1.5rem;
                 }
 
                 label,
                 div {
-                    margin: 10px 0px 10px 0px;
-                    font-size: $font;
+                    margin: 5px 0px 5px 0px;
+                    font-size: 1.1rem;
                 }
 
                 form input,

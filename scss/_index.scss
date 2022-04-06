@@ -3,19 +3,24 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    .carousel-item{
+        img{
+            width: 20em;
+        }
+    }
 }
 
 .div-cuadros {
     display: flex;
     justify-content: center;
-    background-color: $transparencia;
+    width: 90%;
+    margin: auto;
 
-    .cuadro-uno,
-    .cuadro-tres {
+    .boxes {
         width: 48vh;
-        margin: 30px;
+        margin: 10px;
         padding: 25px;
-        font-size: $font + 5;
+        background-color: $transparencia;
 
         &:hover {
             transform: scale(1.1, 1.1);
@@ -23,7 +28,7 @@
 
         h2 {
             font-weight: bold;
-            font-size: $font + 2;
+            font-size: 1.2rem;
 
             i {
                 padding: 10px;
@@ -32,12 +37,7 @@
 
         p {
             margin-left: 10px;
+            font-size: 1rem
         }
-    }
-
-    .cuadro-dos {
-        @extend .cuadro-uno;
-        border-left: solid 1px $negro;
-        border-right: solid 1px $negro;
     }
 }
